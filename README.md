@@ -1,27 +1,46 @@
-# DataFetcherApp
+# Angular HTTP Request Handling Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+This is an Angular application that demonstrates how to fetch data from a mock REST API using Angular's `HttpClient`, handle HTTP requests, and display the fetched data in a component. The application also includes error handling for failed HTTP requests.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Fetch data from a mock REST API.
+- Display the fetched data in a responsive layout.
+- Implement error handling for HTTP request failures.
+- Sort data by title.
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure to have the following installed:
 
-## Build
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [Angular CLI](https://angular.io/cli) (install it globally using `npm install -g @angular/cli`)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Setup Instructions
 
-## Running unit tests
+1. **Navigate to the frontend folder:**
+ cd pathToFolder
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Install dependencies:
 
-## Running end-to-end tests
+## Run the following command to install the necessary packages:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+npm install
 
-## Further help
+## Start the development server with the following command:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ng serve
+
+## Open the application in browser:
+
+# Navigate to http://localhost:4200 in your web browser and see the application running.
+
+## Application Structure
+src/app: Contains the application modules and components.
+data-display: Contains the component responsible for displaying data.
+data.service.ts: Contains the service that handles HTTP requests.
+
+## Usage
+The application fetches data from the mock REST API when it is loaded.
+You can click the "Sort Data" button to sort data.
+Any errors that occur during the fetch operation will be displayed in a user-friendly alert.
